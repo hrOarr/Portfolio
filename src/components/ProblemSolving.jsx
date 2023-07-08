@@ -57,8 +57,8 @@ const ProblemSolving = () => {
                     Problem Solving
                 </div>
 
-                <div className="font-light text-gray-600 my-6">
-                    In my 4+ years Competitive Coding Career, solved a huge number of problems(approximately 2500+) and took part in National/International Collegiate Programming Contest(NCPC/ICPC), Inter-university Programming Contest(IUPC) since 2016,also participated in daily available online contests in so many platforms(Codeforces, Codechef, Hackerrank etc). I learnt and practiced with so many topics like data structures, graph theory, dynamic programming, mathematics, string processing, geometry and so on.
+                <div className="font-light text-gray-600 my-6 tracking-wide">
+                    In my 4+ years Competitive Coding Career, solved a huge number of problems(approximately <span className="font-medium">2500+</span>) and took part in National/International Collegiate Programming Contest<span className="font-medium">(NCPC/ICPC)</span>, Inter-university Programming Contest(IUPC) since 2016, also participated in daily available online contests in so many platforms (Codeforces, Codechef, Hackerrank etc). I have learnt and practiced with so many topics like data structures, graph theory, dynamic programming, mathematics, string processing, geometry and so on.
                 </div>
 
                 <div className="flex flex-col">

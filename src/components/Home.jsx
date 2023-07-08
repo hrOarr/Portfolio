@@ -12,7 +12,7 @@ const Home = () => {
             <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 max-w-7xl mx-auto p-5">
                 <div>
                     <p className="text-indigo-500 leading-normal font-medium tracking-wide text-lg">Hi, I'm</p>
-                    <h2 className="text-5xl lg:text-6xl xl:text-7xl font-medium text-[#fff] tracking-wide pt-2">Asfakul Ghani</h2>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#fff] tracking-wide pt-2">Asfakul Ghani</h2>
 
                     <h3 className="leading-normal text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black pt-2">Passionate software engineer solving problems</h3>
 
