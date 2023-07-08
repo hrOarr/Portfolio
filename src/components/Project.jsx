@@ -8,7 +8,7 @@ const projects = [
         preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5310c20d0c240f/hrOarr/Idle-Time-Minimization-of-Uber-Driver",
         description: 'It provides an optimal location for Uber driver based on previous stats, current day and times',
         color: 'bg-[#e36c22]',
-        languages: ['HTML', 'Python'],
+        languages: ['HTML', 'Python', 'Django'],
         link: 'https://github.com/hrOarr/Idle-Time-Minimization-of-Uber-Driver'
     },
     {
@@ -46,7 +46,7 @@ const Project = () => {
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col py-14 lg:py-20 max-w-7xl mx-auto p-5"
+                        className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
                 <h3 className="text-5xl lg:text-6xl text-gray-700 tracking-wide pb-10">Projects</h3>
 
