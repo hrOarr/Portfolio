@@ -20,7 +20,7 @@ const blogs = [
     {
         title: 'Apache ActiveMQ — Key Differences On Classic vs Artemis',
         url: 'https://medium.com/@astrodust/apache-activemq-key-differences-on-classic-vs-artemis-a22efe9ea45a',
-        tags: ['Java', 'Jms', 'Activemq', 'Artemis']
+        tags: ['Java', 'Jms', 'Activemq']
     },
     {
         title: 'Concurrency Issues with SimpleDateFormat in Java',
@@ -35,9 +35,9 @@ const Blogs = () => {
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col py-20 max-w-7xl mx-auto p-5"
+                        className="flex flex-col py-14 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <div className="text-5xl md:text-6xl text-[#fff] pb-16">
+                <div className="text-5xl lg:text-6xl text-[#fff] pb-12">
                     Blogs
                 </div>
 
@@ -52,7 +52,6 @@ const Blogs = () => {
                                         {
                                             blog.tags && blog.tags.map((tag) => (
                                                 <li>
-                                                    {/*<span className={`inline-block w-2 h-2 rounded-full`}></span>*/}
                                                     <span className="">#{tag}</span>
                                                 </li>
                                             ))

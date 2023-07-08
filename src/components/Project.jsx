@@ -46,9 +46,9 @@ const Project = () => {
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col py-24 max-w-7xl mx-auto p-5"
+                        className="flex flex-col py-14 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <h3 className="text-5xl md:text-6xl text-gray-700 tracking-wide pb-16">Projects</h3>
+                <h3 className="text-5xl lg:text-6xl text-gray-700 tracking-wide pb-10">Projects</h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {
