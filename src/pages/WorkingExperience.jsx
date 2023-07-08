@@ -45,7 +45,7 @@ const WorkingExperience = () => {
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col pt-20 max-w-7xl mx-auto p-10"
+                        className="flex flex-col pt-20 max-w-7xl mx-auto p-5"
             >
                 <h4 className="text-5xl md:text-6xl text-gray-700 pb-5">Experiences</h4>
                 {

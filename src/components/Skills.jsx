@@ -11,7 +11,7 @@ const Skills = () => {
             <motion.div initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-                        className="flex flex-col py-20 max-w-7xl mx-auto p-10"
+                        className="flex flex-col py-20 max-w-7xl mx-auto p-5"
             >
                 <div className="text-5xl md:text-6xl text-gray-700">
                     Technologies I worked on

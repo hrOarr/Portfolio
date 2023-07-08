@@ -15,22 +15,22 @@ const socialLinks = [
     },
     {
         icon: 'fa-twitter',
-        url: '',
+        url: 'https://twitter.com/AsfakulG',
         color: 'bg-[#00acee]'
     },
     {
         icon: 'fa-facebook-f',
-        url: '',
+        url: 'https://www.facebook.com/aastrodust',
         color: 'bg-[#3b5998]'
     },
     {
         icon: 'fa-medium',
-        url: '',
+        url: 'https://medium.com/@astrodust',
         color: 'bg-[#000]'
     },
     {
         icon: 'fa-stack-overflow',
-        url: '',
+        url: 'https://stackoverflow.com/users/11820899/arbitrary-a',
         color: 'bg-[#f48024]'
     }
 ];
