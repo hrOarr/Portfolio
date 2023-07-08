@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div name="home" className="bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl"
         >
-            <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 max-w-7xl mx-auto p-5">
+            <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 max-w-7xl mx-auto p-2 md:p-5">
                 <div>
                     <p className="text-indigo-500 leading-normal font-medium tracking-wide text-lg">Hi, I'm</p>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#fff] tracking-wider pt-2">Asfakul Ghani</h2>
