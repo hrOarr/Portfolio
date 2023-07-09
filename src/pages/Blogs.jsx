@@ -25,7 +25,7 @@ const blogs = [
     {
         title: 'Concurrency Issues with SimpleDateFormat in Java',
         url: 'https://medium.com/@astrodust/concurrency-issues-with-simpledateformat-in-java-29b77020ee11',
-        tags: ['Java', 'Concurrency', 'Simple Date Format']
+        tags: ['Java', 'Concurrency', 'SimpleDateFormat']
     }
 ];
 
@@ -37,11 +37,11 @@ const Blogs = () => {
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
                         className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <div className="text-5xl lg:text-6xl text-[#fff] pb-12">
+                <div className="text-5xl lg:text-6xl text-[#fff] font-normal pb-12">
                     Blogs
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     {
                         blogs && blogs.map((blog) => (
                             <a href={blog.url} target={'_blank'} rel='noreferrer' className="relative rounded-md text-[#fff] bg-[#274059] hover:shadow-sm p-6 transform transition duration-500 hover:scale-105">

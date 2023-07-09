@@ -11,8 +11,8 @@ const Home = () => {
         >
             <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 max-w-7xl mx-auto p-5">
                 <div>
-                    <p className="text-indigo-500 leading-normal font-medium tracking-wide text-lg">Hi, I'm</p>
-                    <h2 className="text-5xl lg:text-6xl xl:text-7xl font-medium text-[#fff] md:tracking-wide pt-2">Asfakul Ghani</h2>
+                    <p className="text-indigo-500 font-medium tracking-wide text-lg">Hi, I'm</p>
+                    <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-[#fff] md:tracking-wide pt-2">Asfakul Ghani</h2>
 
                     <h3 className="leading-normal text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black pt-2">Passionate software engineer solving problems</h3>
 
@@ -21,10 +21,10 @@ const Home = () => {
                     </div>
 
                     {/*<p className="pt-16 md:pt-20 text-gray-400 text-lg w-96 tracking-wide">I am excited to tackle challenges. I have experience of working on frontend, backend, and devops. </p>*/}
-                    <div className="flex space-x-12 pt-8 md:pt-12">
+                    <div className="flex space-x-14 pt-12 md:pt-14">
                         <a href={CV} download>
                             <button
-                                className="flex bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md">
+                                className="button flex text-base bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md font-semibold">
                                 <BsDownload size={20}/>
                                 <span className="pl-2 text-md uppercase">Download CV</span>
                             </button>
@@ -32,7 +32,7 @@ const Home = () => {
 
                         <Link to="about" smooth={true} duration={500}>
                             <button
-                                className="flex bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md uppercase">
+                                className="button flex bg-indigo-500 text-white text-base hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md">
                                 <span className="uppercase text-md">About Me</span>
                             </button>
                         </Link>

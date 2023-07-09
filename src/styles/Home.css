@@ -13,3 +13,11 @@
 .animate-arrow {
     animation: arrow 1s infinite;
 }
+
+.button {
+    font-weight: 700;
+    width: max-content;
+    padding: 13px 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

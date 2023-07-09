@@ -1,9 +1,23 @@
-.subheading {
-    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.0rem;
+.experience-text-company {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: normal;
 }
-.subheading a {
-    color: #bd5d38;
+
+.experience-text-role {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: normal;
+}
+
+.experience-text-date {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: normal;
+}
+
+.experience-text-details {
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.1rem;
 }

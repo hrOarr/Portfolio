@@ -13,7 +13,7 @@ const Skills = () => {
                         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
                         className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <div className="text-5xl lg:text-6xl text-gray-700">
+                <div className="text-5xl lg:text-6xl text-gray-800 font-normal">
                     Technologies I worked on
                 </div>
                 <div className="pb-12 pt-4 text-xl text-gray-500 uppercase tracking-wide">

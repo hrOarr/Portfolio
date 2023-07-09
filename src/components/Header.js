@@ -51,10 +51,10 @@ const Header = () => {
                 <ul className="hidden md:flex gap-x-8">
                     {
                         menuList && menuList.map((menu) => (
-                            <li className="text-lg tracking-wider cursor-pointer hover:scale-105 hover:text-gray-400">
+                            <li className="cursor-pointer hover:scale-105 hover:text-gray-400">
                                 <Link to={menu.name} smooth={true} duration={500}
                                       onClick={() => changeActiveMenu(menu.name)}><span
-                                    className="uppercase">{menu.name}</span></Link>
+                                    className="capitalize menu tracking-normal text-xl">{menu.name}</span></Link>
                             </li>
                         ))
                     }
@@ -75,10 +75,10 @@ const Header = () => {
                         <ul className={!isOpen ? "hidden" : "flex flex-col justify-center items-center py-12 sm:py-20 gap-y-8"}>
                             {
                                 menuList && menuList.map((menu) => (
-                                    <li className="text-lg tracking-wider cursor-pointer duration-200 hover:scale-105 hover:text-gray-400">
+                                    <li className="cursor-pointer duration-200 hover:scale-105 hover:text-gray-400">
                                         <Link to={menu.name} smooth={true} duration={500}
                                               onClick={() => changeActiveMenu(menu.name)}><span
-                                            className="uppercase">{menu.name}</span></Link>
+                                            className="capitalize menu tracking-normal text-xl">{menu.name}</span></Link>
                                     </li>
                                 ))
                             }

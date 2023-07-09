@@ -14,11 +14,11 @@ const experiences = [
         end_time: 'Present',
         location: 'Dhaka, Bangladesh',
         responsibilities: [
-            'Responsible to handle the Frontend as well as Backend.',
-            'Implement new features to the apps.',
-            'Implement new features to the apps.',
-            'Implement new features to the apps.',
-            'Implement new features to the apps.'
+            'Worked on both backend and frontend for multiple microservices.',
+            'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
+            'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
+            'Compiled and assessed QA feedbacks to improve software performance.',
+            'Effectively coordinated with cross-functional teams.'
         ]
     },
     {
@@ -31,9 +31,11 @@ const experiences = [
         end_time: 'Dec 2022',
         location: 'Dhaka, Bangladesh',
         responsibilities: [
-            'Responsible to handle the Frontend as well as Backend.',
-            'Implement new features to the apps.',
-            'Implement new features to the apps.'
+            'Worked on both backend and frontend for multiple microservices.',
+            'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
+            'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
+            'Compiled and assessed QA feedbacks to improve software performance.',
+            'Effectively coordinated with cross-functional teams.'
         ]
     }
 ];
@@ -47,7 +49,7 @@ const WorkingExperience = () => {
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
                         className="flex flex-col pt-16 lg:pt-20 max-w-7xl mx-auto p-5"
             >
-                <h4 className="text-5xl lg:text-6xl pb-8 text-gray-700">Experiences</h4>
+                <h4 className="text-5xl lg:text-6xl pb-8 text-gray-800 font-normal">Experiences</h4>
                 {
                     experiences && experiences.map((experience) => (
                         <Experience experience={experience}/>

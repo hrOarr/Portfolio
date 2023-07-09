@@ -48,7 +48,7 @@ const Project = () => {
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
                         className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <h3 className="text-5xl lg:text-6xl text-gray-700 tracking-wide pb-10">Projects</h3>
+                <h3 className="text-5xl lg:text-6xl text-gray-800 font-normal pb-10">Projects</h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {
@@ -59,15 +59,15 @@ const Project = () => {
 
                                 <div className="p-4">
                                     <a href={project.link} target={'_blank'} rel='noreferrer'>
-                                        <h4 className="text-2xl tracking-tight text-black">
+                                        <h4 className="text-2xl font-semibold text-black">
                                             {project.title}
                                         </h4>
                                     </a>
-                                    <p className="text-gray-600 pt-2 mb-2">
+                                    <p className="text-gray-600 pt-2 pb-2">
                                         {project.description}
                                     </p>
 
-                                    <div className="flex pt-3">
+                                    <div className="flex pt-4">
                                         <ul className="flex items-center space-x-4 absolute bottom-2">
                                             {
                                                 project.languages && project.languages.map((language) => (

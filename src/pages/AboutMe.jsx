@@ -11,7 +11,7 @@ const AboutMe = () => {
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
                         className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
-                <div className="text-5xl lg:text-6xl text-gray-700 pb-12">
+                <div className="text-5xl lg:text-6xl text-gray-800 font-normal pb-12">
                     About Me
                 </div>
 
