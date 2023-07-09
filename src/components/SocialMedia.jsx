@@ -37,11 +37,11 @@ const socialLinks = [
 
 const SocialMedia = () => {
     return (
-            <ul className="flex gap-4 md:gap-4">
+            <ul className="flex gap-3 md:gap-4">
                 {
                     socialLinks && socialLinks.map((link)=>(
                         <li>
-                            <a className={`flex w-11 h-11 text-white text-xl items-center justify-center rounded-full hover:bg-[#000000] ${link.color}`} href={link.url} target={'_blank'} rel='noreferrer'>
+                            <a className={`flex w-10 h-10 md:w-11 md:h-11 text-white text-xl items-center justify-center rounded-full hover:bg-[#000000] ${link.color}`} href={link.url} target={'_blank'} rel='noreferrer'>
                                 <i className={`fab ${link.icon}`}></i>
                             </a>
                         </li>
