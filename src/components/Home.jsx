@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div name="home" className="bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl"
         >
-            <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 max-w-7xl mx-auto p-5">
+            <div className="flex pt-28 pb-16 md:pt-48 md:pb-24 sm:items-center md:max-w-7xl mx-auto p-5">
                 <div>
                     <p className="text-indigo-500 font-medium tracking-wide text-lg">Hi, I'm</p>
                     <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-[#fff] md:tracking-wide pt-2">Asfakul Ghani</h2>
@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
 
                     {/*<p className="pt-16 md:pt-20 text-gray-400 text-lg w-96 tracking-wide">I am excited to tackle challenges. I have experience of working on frontend, backend, and devops. </p>*/}
-                    <div className="flex space-x-8 md:space-x-10 pt-12 md:pt-14">
+                    <div className="flex space-x-4 md:space-x-10 pt-12 md:pt-14">
                         <a href={CV} download>
                             <button
                                 className="button flex text-base bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md font-semibold">
