@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
 
                     {/*<p className="pt-16 md:pt-20 text-gray-400 text-lg w-96 tracking-wide">I am excited to tackle challenges. I have experience of working on frontend, backend, and devops. </p>*/}
-                    <div className="flex space-x-12 pt-12 md:pt-14">
+                    <div className="flex space-x-8 md:space-x-10 pt-12 md:pt-14">
                         <a href={CV} download>
                             <button
                                 className="button flex text-base bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-indigo-500 hover:scale-105 hover:duration-300 font-medium px-3 py-3 md:px-4 rounded-md font-semibold">

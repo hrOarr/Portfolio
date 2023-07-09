@@ -25,7 +25,7 @@ const Experience = ({experience}) => {
                     </div>
                     {/*<hr className="border-gray-300 mb-4" />*/}
                     <div className="text-[#868e96] experience-text-details text-md md:text-lg pt-2 lg:pt-0">
-                        <strong>Responsibilities</strong><br/>
+                        <strong>Responsibilities</strong> <br/>
                         {
                             experience.responsibilities && experience.responsibilities.map((responsibility) => (
                                 <li>{responsibility}</li>

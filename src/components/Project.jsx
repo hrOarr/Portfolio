@@ -68,7 +68,7 @@ const Project = () => {
                                     </p>
 
                                     <div className="flex pt-4">
-                                        <ul className="flex items-center space-x-4 absolute bottom-2">
+                                        <ul className="flex items-center space-x-4 absolute bottom-2 text-[#868e96]">
                                             {
                                                 project.languages && project.languages.map((language) => (
                                                     <li>
