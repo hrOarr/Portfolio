@@ -25,7 +25,7 @@ const blogs = [
     {
         title: 'Concurrency Issues with SimpleDateFormat in Java',
         url: 'https://medium.com/@astrodust/concurrency-issues-with-simpledateformat-in-java-29b77020ee11',
-        tags: ['Java', 'Concurrency', 'SimpleDateFormat']
+        tags: ['Java', 'Concurrency']
     }
 ];
 
