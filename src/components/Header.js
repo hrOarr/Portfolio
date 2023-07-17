@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import './header.css';
+import '../styles/Header.css';
 import {Link} from 'react-scroll';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import Drawer from 'react-modern-drawer';
@@ -52,9 +52,9 @@ const Header = () => {
                     {
                         menuList && menuList.map((menu) => (
                             <li className="cursor-pointer hover:scale-105 hover:text-gray-400">
-                                <Link to={menu.name} smooth={true} duration={500}
-                                      onClick={() => changeActiveMenu(menu.name)}><span
-                                    className="capitalize menu tracking-normal text-xl">{menu.name}</span></Link>
+                                <Link to={menu.name} smooth={true} duration={500}>
+                                    <span className="capitalize menu tracking-normal text-xl">{menu.name}</span>
+                                </Link>
                             </li>
                         ))
                     }
@@ -76,9 +76,9 @@ const Header = () => {
                             {
                                 menuList && menuList.map((menu) => (
                                     <li className="cursor-pointer duration-200 hover:scale-105 hover:text-gray-400">
-                                        <Link to={menu.name} smooth={true} duration={500}
-                                              onClick={() => changeActiveMenu(menu.name)}><span
-                                            className="capitalize menu tracking-normal text-xl">{menu.name}</span></Link>
+                                        <Link to={menu.name} smooth={true} duration={500}>
+                                            <span className="capitalize menu tracking-normal text-xl">{menu.name}</span>
+                                        </Link>
                                     </li>
                                 ))
                             }

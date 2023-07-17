@@ -1,7 +1,27 @@
 import React from "react";
-import Experience from "../components/Experience";
-import DSI from '../assets/images/company-icons/dsi_icon.jpeg';
+import ExperienceCard from "../../components/experience/ExperienceCard";
+import DSI from '../../assets/images/company-icons/dsi_icon.jpeg';
 import {motion} from "framer-motion";
+import './WorkExperience.scss';
+
+const WorkExperience = () => {
+    return (
+        <div name="experiences" className="bg-[#F9FAFB]">
+            <motion.div initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
+                        className="flex flex-col pt-16 lg:pt-20 max-w-7xl mx-auto p-5"
+            >
+                <h4 className="title">Experiences</h4>
+                {
+                    experiences && experiences.map((experience) => (
+                        <ExperienceCard experience={experience}/>
+                    ))
+                }
+            </motion.div>
+        </div>
+    );
+};
 
 const experiences = [
     {
@@ -40,24 +60,4 @@ const experiences = [
     }
 ];
 
-const WorkingExperience = () => {
-
-    return (
-        <div name="experiences" className="bg-[#F9FAFB]">
-            <motion.div initial={{opacity: 0}}
-                        animate={{opacity: 1}}
-                        transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col pt-16 lg:pt-20 max-w-7xl mx-auto p-5"
-            >
-                <h4 className="text-5xl lg:text-6xl pb-8 text-gray-800 font-normal">Experiences</h4>
-                {
-                    experiences && experiences.map((experience) => (
-                        <Experience experience={experience}/>
-                    ))
-                }
-            </motion.div>
-        </div>
-    );
-};
-
-export default WorkingExperience;
+export default WorkExperience;

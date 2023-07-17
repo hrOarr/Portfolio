@@ -1,0 +1,67 @@
+import React from 'react';
+import {motion} from "framer-motion";
+import BlogCard from "../../components/blog/blogCard";
+import './Blogs.scss';
+
+const Blogs = () => {
+    return (
+        <div className="bg-[#0e2439]" id="blogs">
+            <motion.div initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
+                        className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
+            >
+                <div className="text-5xl lg:text-6xl text-[#fff] font-normal pb-12">
+                    Blogs
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    {
+                        blogs && blogs.map((blog) => (
+                            <BlogCard blog={blog} />
+                        ))
+                    }
+                </div>
+
+                <div className="flex items-center justify-center pt-12">
+                    <a href="https://medium.com/@astrodust" target={'_blank'} rel='noreferrer'>
+                        <button
+                            className="flex button-more">
+                            <span className="text-md">More Blogs</span>
+                        </button>
+                    </a>
+                </div>
+            </motion.div>
+        </div>
+    );
+}
+
+export default Blogs;
+
+const blogs = [
+    {
+        title: 'A Closer Look at Lambda Expression — Feature of Java 8',
+        url: 'https://medium.com/@astrodust/a-closer-look-at-lambda-expression-feature-of-java-8-9c2fa57fcb1f',
+        tags: ['Java', 'Lambda']
+    },
+    {
+        title: 'A Guide To Stream API — Feature of Java 8',
+        url: 'https://medium.com/@astrodust/a-guide-to-stream-api-feature-of-java-8-abaf7277d875',
+        tags: ['Java', 'Stream', 'Functional Interface']
+    },
+    {
+        title: 'Prerequisites For Getting A Good Start To Spring Boot',
+        url: 'https://medium.com/@astrodust/prerequisites-for-getting-a-good-start-to-spring-boot-2e71902df94b',
+        tags: ['Java', 'Servlet', 'Spring Boot']
+    },
+    {
+        title: 'Apache ActiveMQ — Key Differences On Classic vs Artemis',
+        url: 'https://medium.com/@astrodust/apache-activemq-key-differences-on-classic-vs-artemis-a22efe9ea45a',
+        tags: ['Java', 'Jms', 'Activemq']
+    },
+    {
+        title: 'Concurrency Issues with SimpleDateFormat in Java',
+        url: 'https://medium.com/@astrodust/concurrency-issues-with-simpledateformat-in-java-29b77020ee11',
+        tags: ['Java', 'Concurrency']
+    }
+];

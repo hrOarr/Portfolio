@@ -1,11 +1,11 @@
 import './App.css';
 import Header from "./components/Header";
-import Home from "./components/Home";
-import WorkingExperience from "./pages/WorkingExperience";
-import Project from "./components/Project";
-import Skills from "./components/Skills";
-import ProblemSolving from "./components/ProblemSolving";
-import Blogs from "./pages/Blogs";
+import Home from "./pages/home/Home";
+import WorkExperience from "./pages/experiences/WorkExperience";
+import Projects from "./pages/projects/Projects";
+import Skills from "./pages/skills/Skills";
+import ProblemSolving from "./pages/problemSolving/ProblemSolving";
+import Blogs from "./pages/blogs/Blogs";
 import AboutMe from "./pages/AboutMe";
 import Footer from "./components/Footer";
 
@@ -14,8 +14,8 @@ function App() {
     <div>
         <Header />
         <Home />
-        <WorkingExperience />
-        <Project />
+        <WorkExperience />
+        <Projects />
         <Skills />
         <ProblemSolving />
         <Blogs />

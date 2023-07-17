@@ -1,13 +1,13 @@
 import React from "react";
-import '../styles/Experience.css';
+import './ExperienceCard.scss';
 
-const Experience = ({experience}) => {
+const ExperienceCard = ({experience}) => {
     return (
         <div
             className="mb-5 mt-2 tracking-wider rounded-md bg-secondary-light dark:bg-ternary-dark">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 md:order-2">
                 <div
-                    className="w-full h-41 flex items-center justify-center md:justify-start my-auto cursor-pointer"
+                    className="w-full h-52 flex items-center justify-center md:justify-start my-auto cursor-pointer"
                     onClick={() => window.open(experience.companyUrl || window.location, '_blank')}
                 >
                     <img className="max-h-full max-w-full rounded-full shadow-sm" src={experience.company_icon}></img>
@@ -34,8 +34,9 @@ const Experience = ({experience}) => {
                     </div>
                 </div>
             </div>
+            <div className="experience-card-border"></div>
         </div>
     );
 };
 
-export default Experience;
+export default ExperienceCard;

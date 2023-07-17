@@ -1,0 +1,11 @@
+.main-div {
+    @apply bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl;
+}
+
+.name {
+    @apply text-5xl lg:text-6xl xl:text-7xl font-bold text-[#fff] md:tracking-wide pt-2;
+}
+
+.role {
+    @apply leading-normal text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black pt-2;
+}

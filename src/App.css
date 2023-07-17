@@ -49,3 +49,37 @@
 .hide-scrollbar::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-arrow {
+  animation: arrow 1s infinite;
+}
+
+.button-primary {
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+
+  @apply bg-indigo-500 hover:text-indigo-500 text-white text-base hover:bg-white
+  hover:border-indigo-500 hover:scale-105 hover:duration-300 px-3 py-3 md:px-4 rounded-md cursor-pointer uppercase;
+}
+
+.button-more {
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+
+  @apply flex bg-indigo-500 text-white text-base hover:bg-white hover:border-2 hover:border-indigo-500
+  hover:text-indigo-500 hover:scale-105 hover:duration-300 px-3 py-3 md:px-4 rounded-md uppercase;
+}
