@@ -1,5 +1,6 @@
 .project-card {
-  @apply rounded-md relative bg-[#F9FAFB] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_3px] overflow-hidden;
+  @apply rounded-md relative bg-[#F9FAFB] shadow-[rgba(13,_38,_76,_0.19)_0px_0px_3px];
+  overflow: hidden;
 }
 
 .preview-img {

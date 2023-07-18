@@ -1,5 +1,5 @@
 import React from "react";
-import './OnlineJudgeCard.scss';
+import './OnlineJudgeCard.css';
 
 const OnlineJudgeCard = ({onlineJudge}) => {
     return (

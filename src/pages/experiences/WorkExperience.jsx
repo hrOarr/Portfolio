@@ -2,7 +2,7 @@ import React from "react";
 import ExperienceCard from "../../components/experience/ExperienceCard";
 import DSI from '../../assets/images/company-icons/dsi_icon.jpeg';
 import {motion} from "framer-motion";
-import './WorkExperience.scss';
+import './WorkExperience.css';
 
 const WorkExperience = () => {
     return (

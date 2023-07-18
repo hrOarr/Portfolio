@@ -3,7 +3,7 @@ import ActiveMQ from '../../assets/images/dev-icons/apache_activemq_icon.svg';
 import Hibernate from '../../assets/images/dev-icons/hibernate_icon.svg';
 import {motion} from "framer-motion";
 import SkillCard from "../../components/skill/skillCard";
-import './Skills.scss';
+import './Skills.css';
 
 const Skills = () => {
     return (

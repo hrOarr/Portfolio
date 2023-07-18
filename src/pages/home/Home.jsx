@@ -2,7 +2,7 @@ import React from "react";
 import {BsDownload} from 'react-icons/bs';
 import SocialMedia from "../../components/SocialMedia";
 import CV from '../../assets/resumes/Asfakul-Ghani-CV.pdf';
-import './Home.scss';
+import './Home.css';
 import {Link} from 'react-scroll';
 import Cover from '../../assets/images/4140038.png';
 

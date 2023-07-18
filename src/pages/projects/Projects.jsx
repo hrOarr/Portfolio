@@ -1,7 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 import ProjectCard from "../../components/project/ProjectCard";
-import './Projects.scss';
+import './Projects.css';
 
 const Projects = () => {
     return (

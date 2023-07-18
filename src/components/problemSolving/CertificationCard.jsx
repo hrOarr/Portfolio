@@ -1,5 +1,5 @@
 import React from "react";
-import './CertificationCard.scss';
+import './CertificationCard.css';
 
 const CertificationCard = ({certificate}) => {
     return (
