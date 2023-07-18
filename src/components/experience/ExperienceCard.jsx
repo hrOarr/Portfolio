@@ -13,24 +13,26 @@ const ExperienceCard = ({experience}) => {
                     <img className="max-h-full max-w-full rounded-full shadow-sm" src={experience.company_icon}></img>
                 </div>
                 <div className="md:col-span-2 lg:col-span-3 my-auto p-2">
-                    <div className="flex-col lg:flex-row md:flex justify-between">
+                    <div className="flex-col md:flex-row md:flex justify-between">
                         <div>
-                            <h3 className="text-2xl md:text-3xl text-[#000] experience-text-company">{experience.company}</h3>
-                            <div className="text-xl md:text-2xl experience-text-role text-[#000] font-medium mb-3">{experience.role}</div>
+                            <h3 className="text-2xl md:text-3xl text-[#fff] experience-text-company">{experience.company}</h3>
+                            <div className="text-xl md:text-2xl experience-text-role text-[#fff] font-medium mb-3">{experience.role}</div>
                         </div>
-                        <div className="lg:text-right experience-text-date">
+                        <div className="lg:text-right text-[#fff] experience-text-date">
                             <p className="">{experience.location}</p>
                             <p className="">{experience.start_time} - {experience.end_time}</p>
                         </div>
                     </div>
                     {/*<hr className="border-gray-300 mb-4" />*/}
-                    <div className="text-[#868e96] experience-text-details text-md md:text-lg pt-2 lg:pt-0">
-                        <strong>Responsibilities</strong> <br/>
+                    <div className="text-[#9cb3c9] experience-text-details text-md md:text-lg pt-2">
+                        {/*<strong>Responsibilities</strong> <br/>*/}
+                        <ul className="pt-1">
                         {
                             experience.responsibilities && experience.responsibilities.map((responsibility) => (
                                 <li>{responsibility}</li>
                             ))
                         }
+                        </ul>
                     </div>
                 </div>
             </div>

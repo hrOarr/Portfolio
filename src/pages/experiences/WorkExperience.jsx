@@ -6,13 +6,13 @@ import './WorkExperience.scss';
 
 const WorkExperience = () => {
     return (
-        <div name="experiences" className="bg-[#F9FAFB]">
+        <div name="experiences" className="bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl">
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
                         className="flex flex-col pt-16 lg:pt-20 max-w-7xl mx-auto p-5"
             >
-                <h4 className="title">Experiences</h4>
+                <h4 className="experience-title">Experiences</h4>
                 {
                     experiences && experiences.map((experience) => (
                         <ExperienceCard experience={experience}/>
