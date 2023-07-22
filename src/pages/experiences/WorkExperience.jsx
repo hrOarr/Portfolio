@@ -6,11 +6,11 @@ import './WorkExperience.css';
 
 const WorkExperience = () => {
     return (
-        <div name="experiences" className="bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl">
+        <div name="experiences" className="bg-[#0e2439]">
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col pt-16 lg:pt-20 max-w-7xl mx-auto p-5"
+                        className="flex flex-col pt-8 lg:pt-10 max-w-7xl mx-auto p-5"
             >
                 <h4 className="experience-title">Experiences</h4>
                 {

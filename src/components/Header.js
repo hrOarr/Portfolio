@@ -47,7 +47,7 @@ const Header = () => {
     return (
         <div>
             <nav
-                className="fixed w-full flex px-6 py-4 justify-end transparent items-center bg-gradient-to-r to-[#0e2439] from-slate-900 text-gray-300 z-10">
+                className="fixed w-full flex px-6 py-4 justify-end transparent items-center bg-[#0e2439] text-gray-300 z-10">
                 <ul className="hidden md:flex gap-x-8">
                     {
                         menuList && menuList.map((menu) => (

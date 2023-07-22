@@ -11,18 +11,19 @@ const Home = () => {
         <div name="home" className="main-div"
         >
             <div className="flex pt-28 pb-16 md:pt-52 md:pb-24 md:max-w-7xl mx-auto p-5 md:p-4">
-                <div className="md:flex space-y-8 md:space-y-0">
-                    <div className="md:order-first basis-3/5">
-                        <p className="text-indigo-500 font-medium tracking-wide text-lg">Hi, I'm</p>
-                        <h2 className="name">Asfakul Ghani</h2>
+                <div>
+                    <div className="md:flex greeting-main md:text-start text-center">
+                        <div className="">
+                        <div className="text-indigo-500 font-medium tracking-wide text-lg">Hi, I'm</div>
+                        <div className="name">Asfakul Ghani</div>
 
-                        <h3 className="role">Software engineer solving issue</h3>
+                        <div className="role">A Software engineer with a flair for problem-solving, coding, and creating efficient solutions for complex challenges.</div>
 
                         <div className="mt-8 md:mt-20">
                             <SocialMedia/>
                         </div>
 
-                        <div className="flex space-x-4 md:space-x-10 pt-12 md:pt-14">
+                        <div className="inline-flex space-x-4 md:space-x-10 pt-12 md:pt-14">
                             <a href={CV} download>
                                 <button
                                     className="flex button-primary">
@@ -38,9 +39,10 @@ const Home = () => {
                                 </button>
                             </Link>
                         </div>
-                    </div>
-                    <div className="basis-2/5">
+                        </div>
+                    <div className="h-auto">
                         <img src={Cover} className="h-full w-full" />
+                    </div>
                     </div>
                 </div>
             </div>

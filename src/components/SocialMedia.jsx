@@ -37,7 +37,7 @@ const socialLinks = [
 
 const SocialMedia = () => {
     return (
-            <ul className="flex gap-3 md:gap-4">
+            <ul className="inline-flex gap-3 md:gap-4">
                 {
                     socialLinks && socialLinks.map((link)=>(
                         <li>

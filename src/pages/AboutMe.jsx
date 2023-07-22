@@ -19,7 +19,7 @@ const AboutMe = () => {
                     <div className="md:order-last basis-1/3 h-full">
                         <img
                             src={Profile}
-                            className="rounded-full h-80 w-80 mx-auto"
+                            className="rounded-full md:h-80 md:w-80 h-64 w-64 mx-auto"
                             alt=""
                         ></img>
                     </div>

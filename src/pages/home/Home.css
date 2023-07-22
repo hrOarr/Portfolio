@@ -1,5 +1,5 @@
 .main-div {
-    @apply bg-gradient-to-r to-[#0e2439] from-slate-900 shadow-2xl;
+    @apply bg-[#0e2439];
 }
 
 .name {
@@ -7,5 +7,11 @@
 }
 
 .role {
-    @apply leading-normal text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black pt-2;
+    @apply text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-3xl pt-8;
+    line-height: 40px;
+}
+
+.greeting-main > * {
+    flex: 1;
+    margin-bottom: 30px;
 }
