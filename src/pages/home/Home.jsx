@@ -19,7 +19,7 @@ const Home = () => {
 
                         <div className="role">A Software engineer with a flair for problem-solving, coding, and creating efficient solutions for complex challenges.</div>
 
-                        <div className="mt-8 md:mt-20">
+                        <div className="mt-8 md:mt-14">
                             <SocialMedia/>
                         </div>
 

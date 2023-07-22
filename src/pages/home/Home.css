@@ -7,8 +7,7 @@
 }
 
 .role {
-    @apply text-[#9cb3c9] text-3xl md:text-3xl lg:text-4xl xl:text-3xl pt-8;
-    line-height: 40px;
+    @apply text-[#9cb3c9] text-2xl xl:text-3xl pt-8 md:leading-normal;
 }
 
 .greeting-main > * {
