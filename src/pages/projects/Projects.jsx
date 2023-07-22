@@ -38,7 +38,7 @@ const projects = [
     {
         id: 1,
         title: 'Idle Time Minimization of Uber Driver',
-        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5310c20d0c240f/hrOarr/Idle-Time-Minimization-of-Uber-Driver",
+        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240f/hrOarr/Idle-Time-Minimization-of-Uber-Driver",
         description: 'It provides an optimal location for Uber driver based on previous stats, current day and times',
         color: 'bg-[#e36c22]',
         languages: ['HTML', 'Python', 'Django'],
@@ -47,7 +47,7 @@ const projects = [
     {
         id: 2,
         title: 'Graph Algorithm Visualizer',
-        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5310c20d0c240h/hrOarr/Path-finder-visualizer",
+        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240h/hrOarr/Path-finder-visualizer",
         description: 'A React web visualizer that helps to visualize algorithms like dfs, bfs, dijkstra, bellman-ford, spfa',
         color: 'bg-[#f5e571]',
         languages: ['Javascript', 'React'],
@@ -56,7 +56,7 @@ const projects = [
     {
         id: 3,
         title: 'FamilyStoryBook Backend',
-        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5310c20d0c240h/hrOarr/familyStoryBook_Backend",
+        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240h/hrOarr/familyStoryBook_Backend",
         description: 'An API service that offers a good variety of features support for family tree',
         color: 'bg-[#9c7911]',
         languages: ['Java', 'Spring Boot'],
@@ -65,7 +65,7 @@ const projects = [
     {
         id: 4,
         title: 'FamilyStoryBook Frontend',
-        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5310c20d0c240h/hrOarr/familyStoryBook_frontend",
+        preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240h/hrOarr/familyStoryBook_frontend",
         description: 'A family tree where one can manage everything at one place along with details like member-info (education, job, achievement), family documents etc.',
         color: 'bg-[#f5e571]',
         languages: ['Javascript', 'React'],

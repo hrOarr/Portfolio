@@ -141,6 +141,10 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
                 name: "Jenkins"
+            },
+            {
+                img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+                name: "Nginx"
             }
         ]
     },
@@ -154,20 +158,5 @@ const skills = [
         ]
     }
 ]
-
-const skills2 = [
-    {
-        img: Hibernate,
-        skill: 'Hibernate',
-    },
-    {
-        icon: <i class="devicon-nginx-original colored"></i>,
-        skill: "Nginx"
-    },
-    {
-        img: ActiveMQ,
-        skill: "ActiveMQ Artemis"
-    }
-];
 
 export default Skills;

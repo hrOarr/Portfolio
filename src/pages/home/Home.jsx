@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div name="home" className="main-div"
         >
-            <div className="flex pt-28 pb-16 md:pt-52 md:pb-24 md:max-w-7xl mx-auto p-5 md:p-4">
+            <div className="flex pt-28 pb-10 md:pt-52 md:pb-14 md:max-w-7xl mx-auto p-5 md:p-4">
                 <div>
                     <div className="md:flex greeting-main md:text-start text-center">
                         <div className="">

@@ -10,7 +10,7 @@ const WorkExperience = () => {
             <motion.div initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{ease: 'easeInOut', duration: 0.9, delay: 0.2}}
-                        className="flex flex-col pt-8 lg:pt-10 max-w-7xl mx-auto p-5"
+                        className="flex flex-col pt-4 lg:pt-8 max-w-7xl mx-auto p-5"
             >
                 <h4 className="experience-title">Experiences</h4>
                 {
@@ -26,36 +26,35 @@ const WorkExperience = () => {
 const experiences = [
     {
         id: 1,
-        role: 'Assistant Software Engineer',
         company: 'Dynamic Solution Innovators Ltd.',
         company_icon: DSI,
-        companyUrl: '',
-        start_time: 'Jan 2023',
-        end_time: 'Present',
+        companyUrl: 'https://www.dsinnovators.com/',
         location: 'Dhaka, Bangladesh',
-        responsibilities: [
-            'Worked on both backend and frontend for multiple microservices.',
-            'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
-            'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
-            'Compiled and assessed QA feedbacks to improve software performance.',
-            'Effectively coordinated with cross-functional teams.'
-        ]
-    },
-    {
-        id: 2,
-        role: 'Junior Software Engineer',
-        company: 'Dynamic Solution Innovators Ltd.',
-        company_icon: DSI,
-        companyUrl: '',
-        start_time: 'May 2021',
-        end_time: 'Dec 2022',
-        location: 'Dhaka, Bangladesh',
-        responsibilities: [
-            'Worked on both backend and frontend for multiple microservices.',
-            'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
-            'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
-            'Compiled and assessed QA feedbacks to improve software performance.',
-            'Effectively coordinated with cross-functional teams.'
+        roles: [
+            {
+                title: 'Assistant Software Engineer',
+                start_time: 'Jan 2023',
+                end_time: 'Present',
+                responsibilities: [
+                    'Worked on both backend and frontend for multiple microservices.',
+                    'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
+                    'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
+                    'Compiled and assessed QA feedbacks to improve software performance.',
+                    'Effectively coordinated with cross-functional teams.'
+                ]
+            },
+            {
+                title: 'Junior Software Engineer',
+                start_time: 'May 2021',
+                end_time: 'Dec 2022',
+                responsibilities: [
+                    'Worked on both backend and frontend for multiple microservices.',
+                    'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
+                    'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
+                    'Compiled and assessed QA feedbacks to improve software performance.',
+                    'Effectively coordinated with cross-functional teams.'
+                ]
+            }
         ]
     }
 ];
