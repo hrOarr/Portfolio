@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div name="home" className="main-div"
         >
-            <div className="flex pt-28 pb-10 md:pt-52 md:pb-14 md:max-w-7xl mx-auto p-5 md:p-4">
+            <div className="flex pt-28 pb-10 md:pt-40 lg:pt-44 xl:pt-52 md:pb-14 md:max-w-7xl mx-auto p-5 md:p-4">
                 <div>
                     <div className="md:flex greeting-main md:text-start text-center">
                         <div className="">
@@ -23,7 +23,7 @@ const Home = () => {
                             <SocialMedia/>
                         </div>
 
-                        <div className="inline-flex space-x-4 md:space-x-10 pt-12 md:pt-14">
+                        <div className="inline-flex space-x-6 md:space-x-10 pt-12 md:pt-14">
                             <a href={CV} download>
                                 <button
                                     className="flex button-primary">
