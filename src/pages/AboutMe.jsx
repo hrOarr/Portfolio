@@ -50,8 +50,8 @@ const profile = {
     name: 'Asfakul Ghani',
     designation: 'Software Engineer',
     details: 'As a Software Engineer, I like to tackle the challenges and have passion for building efficient & scalable solutions. Skilled in full-stack development, ' +
-        'I have experienced in designing and implementing software solutions by utilizing analytical and strong problem-solving skills. With a continuous learning mindset, ' +
-        'strong problem-solving skills. With a continuous learning mindset, I stay up-to-date with latest industry trends and best practices. ' +
+        'I have experienced in designing and implementing software solutions by utilizing analytical and strong problem-solving skills.' +
+        'With a continuous learning mindset, I stay up-to-date with latest industry trends and best practices. ' +
         'I want to contribute my expertise for creating impactful software solutions that drive positive change.',
     hobby: 'I love to play and watch sports (Cricket, Football)'
 };
