@@ -36,10 +36,9 @@ const experiences = [
                 start_time: 'Jan 2023',
                 end_time: 'Present',
                 responsibilities: [
-                    'Worked on both backend and frontend for multiple microservices.',
-                    'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
+                    'Updated & upgraded the old microservices (version, dependencies and code update).',
+                    'Worked in Datadog integration (APM and log integration).',
                     'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
-                    'Compiled and assessed QA feedbacks to improve software performance.',
                     'Effectively coordinated with cross-functional teams.'
                 ]
             },
