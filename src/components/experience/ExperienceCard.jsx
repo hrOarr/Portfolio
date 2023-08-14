@@ -41,7 +41,7 @@ const ExperienceCard = ({experience}) => {
                                             <ul className="pt-1">
                                                 {
                                                     role.responsibilities && role.responsibilities.map((responsibility) => (
-                                                        <li>{responsibility}</li>
+                                                        <li className="pt-2">{responsibility}</li>
                                                     ))
                                                 }
                                             </ul>

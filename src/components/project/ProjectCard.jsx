@@ -4,14 +4,14 @@ import './ProjectCard.css';
 const ProjectCard = ({project}) => {
     return (
         <div className="project-card">
-            <img alt="" src={project.preview} className="preview-img h-45"/>
+            <a href={project.link} target={'_blank'} rel='noreferrer'>
+                <img alt="" src={project.preview} className="preview-img h-45"/>
+            </a>
 
             <div className="p-4">
-                <a href={project.link} target={'_blank'} rel='noreferrer'>
-                    <h4 className="project-title">
-                        {project.title}
-                    </h4>
-                </a>
+                <h4 className="project-title">
+                    {project.title}
+                </h4>
                 <p className="project-description">
                     {project.description}
                 </p>

@@ -1,6 +1,6 @@
 import React from 'react';
-import ActiveMQ from '../../assets/images/dev-icons/apache_activemq_icon.svg';
-import Hibernate from '../../assets/images/dev-icons/hibernate_icon.svg';
+import Datadog from '../../assets/images/skills/Datadog.png';
+import RestAPI from '../../assets/images/skills/rest-api.png';
 import {motion} from "framer-motion";
 import SkillCard from "../../components/skill/skillCard";
 import './Skills.css';
@@ -145,6 +145,10 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
                 name: "Nginx"
+            },
+            {
+                img: Datadog,
+                name: "Datadog"
             }
         ]
     },
@@ -152,8 +156,8 @@ const skills = [
         name: 'Web Services and APIs',
         sets: [
             {
-                img: '',
-                name: 'Restful APIs'
+                img: RestAPI,
+                name: 'Restful API'
             }
         ]
     }

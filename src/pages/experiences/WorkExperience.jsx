@@ -36,10 +36,10 @@ const experiences = [
                 start_time: 'Jan 2023',
                 end_time: 'Present',
                 responsibilities: [
-                    'Updated & upgraded the old microservices (version, dependencies and code update).',
-                    'Worked in Datadog integration (APM and log integration).',
-                    'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
-                    'Effectively coordinated with cross-functional teams.'
+                    'Integrated Datadog to monitor the infrastructures such as server, container, database.',
+                    "Integrated Datadog’s APM to monitor the performance of 17+ Java applications.",
+                    'Configured Datadog’s Log tracing for Java and Node applications that helps to analyze logs, troubleshoot issues and track user interactions.',
+                    'Updated the log structures for 17+ Java applications.'
                 ]
             },
             {
@@ -47,7 +47,9 @@ const experiences = [
                 start_time: 'May 2021',
                 end_time: 'Dec 2022',
                 responsibilities: [
-                    'Worked on both backend and frontend for multiple microservices.',
+                    'Developed maintainable, easier troubleshooting and fast onboarding backend APIs ' +
+                    'codebase for multiple microservices, followed by OOP concepts and SOLID principles.',
+                    'Re-architected microservice applications from Spring to Spring Boot.',
                     'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
                     'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
                     'Compiled and assessed QA feedbacks to improve software performance.',
