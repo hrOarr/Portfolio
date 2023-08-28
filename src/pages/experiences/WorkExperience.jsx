@@ -36,10 +36,12 @@ const experiences = [
                 start_time: 'Jan 2023',
                 end_time: 'Present',
                 responsibilities: [
-                    'Integrated Datadog to monitor the infrastructures such as server, container, database.',
-                    "Integrated Datadog’s APM to monitor the performance of 17+ Java applications.",
-                    'Configured Datadog’s Log tracing for Java and Node applications that helps to analyze logs, troubleshoot issues and track user interactions.',
-                    'Updated the log structures for 17+ Java applications.'
+                    'Setup Datadog to monitor the infrastructures such as server, container, database etc.',
+                    "Integrated Datadog APM, Log tracing for 17+ Java applications and created dashboards for various applications to monitor historical metrices.",
+                    'Updated the log structures for 17+ Java microservice applications to support both plaintext and JSON log format.',
+                    'Worked with Vonage Messages API to send SMS, and integrated callback to get deliveryreceipt status and webhooks to receive inbound messages to respond accordingly.',
+                    'Worked on Event-driven microservice architecture with ActiveMQ Artemis.',
+                    'Wrote down several Migration Scripts to migrate the data for both Oracle & MongoDB.'
                 ]
             },
             {
@@ -47,13 +49,11 @@ const experiences = [
                 start_time: 'May 2021',
                 end_time: 'Dec 2022',
                 responsibilities: [
-                    'Developed maintainable, easier troubleshooting and fast onboarding backend APIs ' +
-                    'codebase for multiple microservices, followed by OOP concepts and SOLID principles.',
+                    'Developed maintainable backend REST APIs for several microservices, followed by OOP concepts and SOLID principles.',
                     'Re-architected microservice applications from Spring to Spring Boot.',
+                    'Worked with Java Server Page (JSP) and Vue.js in various frontend microservices.',
                     'Analyzed requirements and existing documentations, collaborated with BAs and QAs.',
-                    'Resolved customer-facing issues, bugs on both backend and frontend microservices.',
-                    'Compiled and assessed QA feedbacks to improve software performance.',
-                    'Effectively coordinated with cross-functional teams.'
+                    'Resolved customer-facing issues, bugs on both backend and frontend microservices.'
                 ]
             }
         ]
