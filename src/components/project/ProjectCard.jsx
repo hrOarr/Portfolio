@@ -1,12 +1,22 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import {Carousel} from 'react-responsive-carousel';
 import './ProjectCard.css';
 
 const ProjectCard = ({project}) => {
     return (
         <div className="project-card">
-            <a href={project.link} target={'_blank'} rel='noreferrer'>
-                <img alt="" src={project.preview} className="preview-img h-45"/>
-            </a>
+            <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showStatus={false}>
+                {
+                    project.images.map((image) => (
+                        <a href={project.link} target={'_blank'} rel='noreferrer'>
+                            <div>
+                                <img alt="" src={image} className="preview-img h-45"/>
+                            </div>
+                        </a>
+                    ))
+                }
+            </Carousel>
 
             <div className="p-4">
                 <h4 className="project-title">
