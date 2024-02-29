@@ -26,7 +26,7 @@ const WorkExperience = () => {
 const experiences = [
     {
         id: 1,
-        company: 'Dynamic Solution Innovators Ltd.',
+        company: 'Dynamic Solution Innovators',
         company_icon: DSI,
         companyUrl: 'https://www.dsinnovators.com/',
         location: 'Dhaka, Bangladesh',
