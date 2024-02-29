@@ -26,10 +26,12 @@ const WorkExperience = () => {
 const experiences = [
     {
         id: 1,
-        company: 'Dynamic Solution Innovators',
+        companyName: 'Dynamic Solution Innovators',
         company_icon: DSI,
         companyUrl: 'https://www.dsinnovators.com/',
         location: 'Dhaka, Bangladesh',
+        startTime: 'May 2021',
+        endTime: 'Present',
         roles: [
             {
                 title: 'Associate Software Engineer',

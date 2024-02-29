@@ -17,10 +17,10 @@ const ExperienceCard = ({experience}) => {
                 <div className="md:col-span-2 lg:col-span-3 my-auto p-2">
                     <div className="flex-col justify-between">
                         <div>
-                            <h3 className="text-2xl md:text-3xl text-[#fff] experience-text-company">{experience.company}</h3>
+                            <h3 className="text-2xl md:text-3xl text-[#fff] experience-text-company">{experience.companyName}</h3>
                         </div>
                         <div className="text-left text-[#8897a6] experience-text-date pt-1">
-                            <p className="">{experience.location}</p>
+                            <p className="">{experience.location} | {experience.startTime} - {experience.endTime}</p>
                         </div>
                     </div>
 
