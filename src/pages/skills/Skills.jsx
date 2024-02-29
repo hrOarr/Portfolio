@@ -1,6 +1,7 @@
 import React from 'react';
 import Datadog from '../../assets/images/skills/Datadog.png';
 import RestAPI from '../../assets/images/skills/rest-api.png';
+import ActiveMQ from '../../assets/images/skills/activemq.png';
 import {motion} from "framer-motion";
 import SkillCard from "../../components/skill/skillCard";
 import './Skills.css';
@@ -14,7 +15,7 @@ const Skills = () => {
                         className="flex flex-col py-16 lg:py-20 max-w-7xl mx-auto p-5"
             >
                 <div className="skills-title">
-                    Technologies I worked on
+                    Technologies & Tools
                 </div>
                 <div className="skills-subtitle">
                     As a Software Engineer, I like to explore every tech stack
@@ -26,7 +27,7 @@ const Skills = () => {
                         <div className={"flex flex-col " + (idx>0) ? "pt-8":""}>
                             <h4 className="text-2xl font-bold tracking-wide leading-tight pb-3">{skill.name}</h4>
 
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                 {
                                     skill.sets && skill.sets.map((s) => (
                                         <SkillCard skill={s}/>
@@ -74,10 +75,6 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
                 name: 'CSS'
-            },
-            {
-                img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-                name: 'JavaScript'
             },
             {
                 icon: <i class="devicon-react-original colored" />,
@@ -158,6 +155,28 @@ const skills = [
             {
                 img: RestAPI,
                 name: 'Restful API'
+            }
+        ]
+    },
+    {
+        name: 'Event-driven',
+        sets: [
+            {
+                img: ActiveMQ,
+                name: 'ActiveMQ Artemis'
+            }
+        ]
+    },
+    {
+        name: "Project Management",
+        sets: [
+            {
+                img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg",
+                name: "Jira"
+            },
+            {
+                img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/confluence/confluence-original.svg",
+                name: "Confluence"
             }
         ]
     }

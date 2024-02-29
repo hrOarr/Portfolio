@@ -18,11 +18,9 @@ const ExperienceCard = ({experience}) => {
                     <div className="flex-col justify-between">
                         <div>
                             <h3 className="text-2xl md:text-3xl text-[#fff] experience-text-company">{experience.company}</h3>
-                            {/*<div className="text-xl md:text-2xl experience-text-role text-[#fff] font-medium mb-3">{experience.role}</div>*/}
                         </div>
                         <div className="text-left text-[#8897a6] experience-text-date pt-1">
                             <p className="">{experience.location}</p>
-                            {/*<p className="">{experience.start_time} - {experience.end_time}</p>*/}
                         </div>
                     </div>
 
@@ -37,7 +35,6 @@ const ExperienceCard = ({experience}) => {
 
                                         <div
                                             className="text-[#9cb3c9] experience-text-details text-md md:text-lg pt-4 leading-normal">
-                                            {/*<strong>Responsibilities</strong> <br/>*/}
                                             <ul className="pt-1">
                                                 {
                                                     role.responsibilities && role.responsibilities.map((responsibility) => (
@@ -51,7 +48,6 @@ const ExperienceCard = ({experience}) => {
                             }
                         </ul>
                     </div>
-                    {/*<hr className="border-gray-300 mb-4" />*/}
                 </div>
             </div>
             <div className="experience-card-border"></div>

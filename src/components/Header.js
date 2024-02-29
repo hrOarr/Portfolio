@@ -13,13 +13,13 @@ const menuList = [
         name: 'experiences'
     },
     {
-        name: 'projects'
-    },
-    {
         name: 'skills'
     },
     {
         name: 'problem-solving'
+    },
+    {
+        name: 'projects'
     },
     {
         name: 'blogs'

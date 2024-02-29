@@ -15,9 +15,9 @@ function App() {
         <Header />
         <Home />
         <WorkExperience />
-        <Projects />
         <Skills />
         <ProblemSolving />
+        <Projects />
         <Blogs />
         <AboutMe />
         <Footer />

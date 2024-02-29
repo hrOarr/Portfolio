@@ -4,6 +4,7 @@ import Codechef from '../../assets/images/problem-solving/codechef.png';
 import Codeforces from '../../assets/images/problem-solving/codeforces_icon.webp';
 import ICPC from '../../assets/images/problem-solving/icpc_icon.png';
 import Coursera from '../../assets/images/problem-solving/coursera_icon.png';
+import Udemy from '../../assets/images/problem-solving/udemy_icon.png';
 import {motion} from "framer-motion";
 import OnlineJudgeCard from "../../components/problemSolving/OnlineJudgeCard";
 import CertificationCard from "../../components/problemSolving/CertificationCard";
@@ -37,7 +38,7 @@ const ProblemSolving = () => {
 
                     <div>
                         <h4 className="text-2xl font-bold tracking-wide leading-tight pt-12 pb-6">Certifications</h4>
-                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 2xl:gap-32">
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 xl:gap-12">
                             {
                                 certifications && certifications.map((certificate) => (
                                     <CertificationCard certificate={certificate} />
@@ -82,12 +83,21 @@ const certifications = [
         name: 'ICPCID',
         orgName: 'ICPC - International Collegiate Programming Contest',
         orgIcon: ICPC,
-        credentialUrl: 'https://icpc.global/ICPCID/VMF9OSPU53Q4'
+        credentialUrl: 'https://icpc.global/ICPCID/VMF9OSPU53Q4',
+        type: 'url'
     },
     {
         name: 'Front-End Web Development with React',
         orgName: 'Coursera',
         orgIcon: Coursera,
-        credentialUrl: 'https://www.coursera.org/account/accomplishments/certificate/FL2HGWSHXNZ9'
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/certificate/FL2HGWSHXNZ9',
+        type: 'url'
+    },
+    {
+        name: 'Docker & Kubernetes: The Practical Guide',
+        orgName: 'Udemy',
+        orgIcon: Udemy,
+        credentialUrl: 'https://udemy.com/certificate/UC-3e4b2db6-770a-4a11-81cb-be4253d5c606/',
+        type: 'url'
     }
 ];

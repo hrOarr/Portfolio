@@ -32,14 +32,24 @@ const experiences = [
         location: 'Dhaka, Bangladesh',
         roles: [
             {
-                title: 'Assistant Software Engineer',
-                start_time: 'Jan 2023',
+                title: 'Associate Software Engineer',
+                start_time: 'August 2023',
                 end_time: 'Present',
+                responsibilities: [
+                    'Integrated Datadog synthetic test to check service health for 10+ Java applications.',
+                    'Worked on Job processing to send bulk notifications, multiple schedulers related to notification jobs and clean-up script to delete old data in NotifyService.',
+                    'Developed the Spring applications with Spring Boot to update & upgrade.',
+                    'Trained & guided the Junior level engineers.'
+                ]
+            },
+            {
+                title: 'Assistant Software Engineer',
+                start_time: 'July 2022',
+                end_time: 'July 2023',
                 responsibilities: [
                     'Setup Datadog to monitor the infrastructures such as server, container, database etc.',
                     "Integrated Datadog APM, Log tracing for 17+ Java applications and created dashboards for various applications to monitor historical metrices.",
-                    'Updated the log structures for 17+ Java microservice applications to support both plaintext and JSON log format.',
-                    'Worked with Vonage Messages API to send SMS, and integrated callback to get deliveryreceipt status and webhooks to receive inbound messages to respond accordingly.',
+                    'Worked with Vonage Messages API to send SMS, and integrated callback to get delivery-receipt status and webhooks to receive inbound messages to respond accordingly.',
                     'Worked on Event-driven microservice architecture with ActiveMQ Artemis.',
                     'Wrote down several Migration Scripts to migrate the data for both Oracle & MongoDB.'
                 ]
@@ -47,7 +57,7 @@ const experiences = [
             {
                 title: 'Junior Software Engineer',
                 start_time: 'May 2021',
-                end_time: 'Dec 2022',
+                end_time: 'June 2022',
                 responsibilities: [
                     'Developed maintainable backend REST APIs for several microservices, followed by OOP concepts and SOLID principles.',
                     'Re-architected microservice applications from Spring to Spring Boot.',

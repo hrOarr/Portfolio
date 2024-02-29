@@ -53,5 +53,5 @@ const profile = {
         'I have experienced in designing and implementing software solutions by utilizing analytical and strong problem-solving skills.' +
         'With a continuous learning mindset, I stay up-to-date with latest industry trends and best practices. ' +
         'I want to contribute my expertise for creating impactful software solutions that drive positive change.',
-    hobby: 'Love to play & watch sports (Cricket, Football)'
+    hobby: 'Love to play & watch sports (Cricket, Football, Chess)'
 };

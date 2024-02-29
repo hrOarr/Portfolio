@@ -1,5 +1,7 @@
 import React from "react";
 import './CertificationCard.css';
+import {Document, Page} from '@react-pdf/renderer';
+import DockerCertificate from '../../assets/images/certifications/Docker-And-Kubernetes-Practical-Guide.pdf';
 
 const CertificationCard = ({certificate}) => {
     return (
@@ -11,7 +13,16 @@ const CertificationCard = ({certificate}) => {
                     <img src={certificate.orgIcon} alt="" className="w-6 h-6"/>}
                 <span className="certificate-org-name text-[#202124]">{certificate.orgName}</span>
             </div>
-            <a href={certificate.credentialUrl} className="text-[#69a0d6] credential-url" target={'_blank'} rel='noreferrer'>View credential</a>
+            {
+                certificate.type === 'pdf' ? (
+                    <Document file={DockerCertificate}>
+                        <Page pageNumber={1}/>
+                    </Document>
+                ) : (
+                    <a href={certificate.credentialUrl} className="text-[#69a0d6] credential-url" target={'_blank'}
+                       rel='noreferrer'>View credential</a>
+                )
+            }
         </div>
     );
 };

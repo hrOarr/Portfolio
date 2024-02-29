@@ -6,21 +6,23 @@ import './ProjectCard.css';
 const ProjectCard = ({project}) => {
     return (
         <div className="project-card">
-            <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showStatus={false}>
-                {
-                    project.images.map((image) => (
-                        <a href={project.link} target={'_blank'} rel='noreferrer'>
-                            <div>
-                                <img alt="" src={image} className="preview-img h-45"/>
-                            </div>
-                        </a>
-                    ))
-                }
-            </Carousel>
+            {/*<Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showStatus={false}>*/}
+            {/*    {*/}
+            {/*        project.images.map((image) => (*/}
+            {/*            <a href={project.link} target={'_blank'} rel='noreferrer'>*/}
+            {/*                <div>*/}
+            {/*                    <img alt="" src={image} className="preview-img h-45"/>*/}
+            {/*                </div>*/}
+            {/*            </a>*/}
+            {/*        ))*/}
+            {/*    }*/}
+            {/*</Carousel>*/}
 
             <div className="p-4">
                 <h4 className="project-title">
-                    {project.title}
+                    <a href={project.link} target={'_blank'} rel='noreferrer'>
+                        {project.title}
+                    </a>
                 </h4>
                 <p className="project-description">
                     {project.description}

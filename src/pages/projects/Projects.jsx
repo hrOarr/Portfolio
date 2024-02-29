@@ -1,12 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
 import ProjectCard from "../../components/project/ProjectCard";
-import ITM_IMAGE_1 from '../../assets/projects/IdleTimeMinimizer/image_1.png';
-import ITM_IMAGE_2 from '../../assets/projects/IdleTimeMinimizer/image_2.png';
-import ITM_IMAGE_3 from '../../assets/projects/IdleTimeMinimizer/image_3.png';
-import VIS_IMAGE_1 from '../../assets/projects/Visualizer/image_1.png';
-import VIS_IMAGE_2 from '../../assets/projects/Visualizer/image_2.png';
-import VIS_IMAGE_3 from '../../assets/projects/Visualizer/image_3.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -45,15 +39,10 @@ const projects = [
         id: 1,
         title: 'Idle Time Minimization of Uber Driver',
         preview: "https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240f/hrOarr/Idle-Time-Minimization-of-Uber-Driver",
-        description: 'It provides an optimal location for Uber driver based on previous stats, current day and times',
+        description: 'It provides an optimal location for Uber driver where one can easily find a ride based on previous statistics, current day and times',
         color: 'bg-[#e36c22]',
         languages: ['HTML', 'Python', 'Django'],
-        link: 'https://github.com/hrOarr/Idle-Time-Minimization-of-Uber-Driver',
-        images: [
-            ITM_IMAGE_1,
-            ITM_IMAGE_2,
-            ITM_IMAGE_3
-        ]
+        link: 'https://github.com/hrOarr/Idle-Time-Minimization-of-Uber-Driver'
     },
     {
         id: 2,
@@ -62,12 +51,7 @@ const projects = [
         description: 'A React web visualizer that helps to visualize algorithms like dfs, bfs, dijkstra, bellman-ford, spfa',
         color: 'bg-[#f5e571]',
         languages: ['Javascript', 'React'],
-        link: 'https://github.com/hrOarr/Path-finder-visualizer',
-        images: [
-            VIS_IMAGE_1,
-            VIS_IMAGE_2,
-            VIS_IMAGE_3
-        ]
+        link: 'https://github.com/hrOarr/Path-finder-visualizer'
     },
     {
         id: 3,
@@ -76,10 +60,7 @@ const projects = [
         description: 'An API service that offers a good variety of features support for family tree',
         color: 'bg-[#9c7911]',
         languages: ['Java', 'Spring Boot'],
-        link: 'https://github.com/hrOarr/familyStoryBook_Backend',
-        images: [
-            'https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240h/hrOarr/familyStoryBook_Backend'
-        ]
+        link: 'https://github.com/hrOarr/familyStoryBook_Backend'
     },
     {
         id: 4,
@@ -89,9 +70,6 @@ const projects = [
         color: 'bg-[#f5e571]',
         languages: ['Javascript', 'React'],
         link: 'https://github.com/hrOarr/familyStoryBook_frontend',
-        images: [
-            'https://opengraph.githubassets.com/003b70e7719a56fc2ea20cff90bc658b1d9bf1c18f5a3d790f5315c20d0c240h/hrOarr/familyStoryBook_frontend'
-        ]
     }
 ];
 

@@ -20,7 +20,7 @@ const socialLinks = [
     },
     {
         icon: 'fa-facebook-f',
-        url: 'https://www.facebook.com/aastrodust',
+        url: 'https://www.facebook.com/profile.php?id=61554884112515',
         color: 'bg-[#3b5998]'
     },
     {
