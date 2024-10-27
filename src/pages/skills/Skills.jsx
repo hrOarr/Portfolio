@@ -62,6 +62,10 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
                 name: 'JavaScript',
+            },
+            {
+                img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+                name: 'Python',
             }
         ]
     },
@@ -121,6 +125,10 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
                 name: 'MongoDB',
+            },
+            {
+                img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+                name: 'PostgreSQL',
             }
         ]
     },
@@ -142,6 +150,10 @@ const skills = [
             {
                 img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
                 name: "Nginx"
+            },
+            {
+                img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg',
+                name: "Ansible"
             },
             {
                 img: Datadog,
