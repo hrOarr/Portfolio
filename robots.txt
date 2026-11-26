@@ -1,0 +1,5 @@
+# astrodust — Asfakul Ghani portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://asfakul-ghani.vercel.app/sitemap.xml
