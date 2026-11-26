@@ -1,0 +1,10 @@
+{
+  "name": "astrodust-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "astrodust — Asfakul Ghani portfolio (self-contained static site)",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "build": "echo \"No build step — static site served as-is.\""
+  }
+}
