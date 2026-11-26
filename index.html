@@ -221,6 +221,9 @@ section{padding:82px 0}
 .sys-card .tag{font-family:var(--mono);font-size:.72rem;color:var(--local);letter-spacing:.03em;display:flex;align-items:center;gap:7px}
 .sys-card .tag .pass{color:var(--devops);margin-left:auto;display:inline-flex;align-items:center;gap:5px}
 .sys-card .tag .pass b{width:7px;height:7px;border-radius:50%;background:var(--devops);display:block}
+a.sys-card{display:block;color:inherit;text-decoration:none}
+.sys-card .card-arr{position:absolute;top:22px;right:22px;color:var(--ink-faint);transition:.2s;font-size:1rem}
+a.sys-card:hover .card-arr{color:var(--local);transform:translate(3px,-3px)}
 .sys-card h3{font-family:var(--display);font-size:1.2rem;font-weight:600;margin:10px 0 8px}
 .sys-card p{color:var(--ink-dim);font-size:.93rem;margin-bottom:16px}
 .metric-row{display:flex;gap:9px;flex-wrap:wrap}
@@ -358,7 +361,6 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
   <div class="wrap">
     <div class="hero-grid">
       <div class="reveal in">
-        <div class="kicker"><span class="wmk">astr<span class="planet"></span>dust</span> <span class="sep">· engineering, from stardust to scale</span></div>
         <div class="status"><span class="dot"></span> Open to senior roles · research collaborations</div>
         <h1>Engineering systems at <span class="grad">scale</span> — from backend to the cloud.</h1>
         <div class="typeline"><span class="pre">$ role → </span><span class="role" id="tw"></span></div>
@@ -533,17 +535,19 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
   </div>
 </section>
 
-<!-- RESEARCH -->
+<!-- RESEARCH & PROJECTS -->
 <section id="research" style="--local:var(--research)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">03 — research</span>
-      <h2>Research</h2>
-      <p>Where machine learning meets privacy and distributed systems.</p>
+      <span class="eyebrow">03 — research, thesis & projects</span>
+      <h2>Research, Thesis &amp; Projects</h2>
+      <p>Ongoing research, my final-year project, and what I build with AI.</p>
     </div>
+
+    <!-- flagship research -->
     <div class="research reveal">
       <div>
-        <span class="pill">Ongoing · Federated Learning</span>
+        <span class="pill">Research · ongoing · Federated Learning</span>
         <h3>Federated Learning with GAN-Based Synthetic Data Augmentation</h3>
         <p>A privacy-preserving, non-IID federated learning system on CIFAR-10 — ViT-Lite clients with per-client Conditional GANs and server-side refinement.</p>
         <p>Against a paired independent-FedAvg baseline across 3–10 clients, I showed the benefit is <b style="color:var(--ink)">gated by label-skew severity</b> — meaningful under severe skew, negligible under milder skew.</p>
@@ -553,6 +557,24 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
         <div class="sm">accuracy gain under severe label skew (α = 0.1)<br>— negligible under milder skew, across 3–10 clients</div>
         <div class="tags">ViT-Lite · Conditional GAN · FedAvg · CIFAR-10</div>
       </div>
+    </div>
+
+    <!-- final-year project + featured project -->
+    <div class="sys-grid" style="margin-top:20px">
+      <a class="sys-card reveal" style="--local:var(--cloud)" href="https://github.com/hrOarr/Idle-Time-Minimization-of-Uber-Driver">
+        <span class="card-arr">↗</span>
+        <span class="tag">final-year project</span>
+        <h3>Idle-Time Minimization for Uber Drivers</h3>
+        <p>Full-stack Django system recommending optimal pickup locations from a real NYC trip dataset — k-means clustering with R-tree spatial indexing, on interactive Leaflet maps.</p>
+        <div class="metric-row"><span class="chip">~90% location reduction</span><span class="chip">k-means · R-tree</span></div>
+      </a>
+      <a class="sys-card reveal" style="--local:var(--ai)" href="https://github.com/hrOarr/WorkSyncAI">
+        <span class="card-arr">↗</span>
+        <span class="tag">project · hackathon</span>
+        <h3>WorkSyncAI</h3>
+        <p>An AI productivity platform — FastAPI agents per machine, Spring AI + LLMs, an Elasticsearch vector DB and a React chatbot surfacing insights to reduce burnout.</p>
+        <div class="metric-row"><span class="chip">Spring AI · LLMs</span><span class="chip">vector DB · RAG</span></div>
+      </a>
     </div>
   </div>
 </section>
@@ -612,23 +634,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" style="--local:var(--ai)">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">06 — open source</span><h2>Side projects</h2><p>Things I build to learn — and to help others learn.</p></div>
-    <div class="proj-grid">
-      <a class="proj reveal" href="https://github.com/hrOarr/Idle-Time-Minimization-of-Uber-Driver"><div class="ph"><h3>Idle-Time Minimization · Uber</h3><span class="gh">↗</span></div><p>Full-stack Django app recommending optimal pickup locations via k-means (~90% location reduction) and R-tree indexing on a real NYC dataset, with Leaflet maps.</p><div class="st"><span>Python</span><span>Django</span><span>k-means</span></div></a>
-      <a class="proj reveal" href="https://github.com/hrOarr/WorkSyncAI"><div class="ph"><h3>WorkSyncAI</h3><span class="gh">↗</span></div><p>Hackathon AI productivity platform — FastAPI PC agents, Spring AI + LLMs, an Elasticsearch vector DB and a React chatbot surfacing insights to reduce burnout.</p><div class="st"><span>Spring AI</span><span>FastAPI</span><span>Elasticsearch</span></div></a>
-      <a class="proj reveal" href="https://github.com/hrOarr/Path-finder-visualizer"><div class="ph"><h3>Graph Algorithm Visualizer</h3><span class="gh">↗</span></div><p>A React visualizer for DFS, BFS, Dijkstra, Bellman-Ford and SPFA — pathfinding made intuitive to watch, step by step.</p><div class="st"><span>React</span><span>JavaScript</span><span>Algorithms</span></div></a>
-      <a class="proj reveal" href="https://github.com/hrOarr/familyStoryBook_Backend"><div class="ph"><h3>FamilyStoryBook</h3><span class="gh">↗</span></div><p>A family-tree platform (Spring Boot API + React) to manage members, their education/jobs/achievements and family documents in one place.</p><div class="st"><span>Spring Boot</span><span>React</span><span>Java</span></div></a>
-    </div>
-  </div>
-</section>
-
 <!-- WRITING -->
 <section id="writing" style="--local:var(--swe)">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">07 — writing</span><h2>I write about what I learn</h2><p>Deep-dives on Java internals, Spring and concurrency on Medium.</p></div>
+    <div class="sec-head reveal"><span class="eyebrow">06 — writing</span><h2>I write about what I learn</h2><p>Deep-dives on Java internals, Spring and concurrency on Medium.</p></div>
     <div class="write-list">
       <a class="write reveal" href="https://medium.com/@astrodust/a-closer-look-at-lambda-expression-feature-of-java-8-9c2fa57fcb1f"><span class="num">01</span><h4>A Closer Look at Lambda Expressions — Java 8</h4><div class="tg"><span>#Java</span><span>#Lambda</span></div><span class="arr">↗</span></a>
       <a class="write reveal" href="https://medium.com/@astrodust/a-guide-to-stream-api-feature-of-java-8-abaf7277d875"><span class="num">02</span><h4>A Guide to the Stream API — Java 8</h4><div class="tg"><span>#Java</span><span>#Stream</span></div><span class="arr">↗</span></a>
@@ -645,7 +654,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
     <div class="about">
       <div class="avatar reveal">AG</div>
       <div class="reveal">
-        <span class="eyebrow">08 — about & contact</span>
+        <span class="eyebrow">07 — about & contact</span>
         <h2 style="margin-top:12px">Let's build something scalable.</h2>
         <p>A backend engineer who loves tough problems — scaling systems, taming data pipelines and mentoring teams. A competitive programmer at heart, exploring AI in software engineering and privacy-preserving ML.</p>
         <p style="color:var(--ink-faint);font-family:var(--mono);font-size:.88rem">📍 Dhaka, Bangladesh &nbsp;·&nbsp; ♟ Chess, Cricket & Football</p>
