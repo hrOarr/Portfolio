@@ -4,7 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>astrodust — Asfakul Ghani · Engineer, DevOps & ML Researcher</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Ccircle%20cx='12'%20cy='12'%20r='6'%20fill='%234f8cff'/%3E%3Cellipse%20cx='12'%20cy='12'%20rx='11'%20ry='3.6'%20fill='none'%20stroke='%2338e8c6'%20stroke-width='1.8'%20transform='rotate(-24%2012%2012)'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://asfakul-ghani.vercel.app/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="astrodust">
+<meta property="og:title" content="astrodust — Asfakul Ghani">
+<meta property="og:description" content="Backend & distributed-systems engineer · DevOps · ML researcher · competitive programmer. ~100M notifications/mo across 160+ US banks.">
+<meta property="og:url" content="https://asfakul-ghani.vercel.app/">
+<meta property="og:image" content="https://asfakul-ghani.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="astrodust — Asfakul Ghani">
+<meta name="twitter:description" content="Backend & distributed-systems engineer · DevOps · ML researcher · competitive programmer.">
+<meta name="twitter:image" content="https://asfakul-ghani.vercel.app/og.png">
+<meta name="twitter:site" content="@AsfakulG">
 <meta name="description" content="Mohammed Asfakul Ghani — backend & distributed-systems engineer, DevOps practitioner, ML researcher, cloud enthusiast and competitive programmer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,7 +126,19 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .ide-tab{font-family:var(--mono);font-size:.76rem;color:var(--ink-faint);padding:8px 13px;border-radius:9px 9px 0 0;cursor:pointer;border:1px solid transparent;border-bottom:none;transition:.15s;white-space:nowrap}
 .ide-tab:hover{color:var(--ink-dim)}
 .ide-tab.on{color:var(--ink);background:var(--panel);border-color:var(--line)}
-.ide-tab.on[data-c="devops"]{color:var(--devops)} .ide-tab.on[data-c="cloud"]{color:var(--cloud)} .ide-tab.on[data-c="ai"]{color:var(--ai)}
+.ide-tab.on[data-c="devops"]{color:var(--devops)} .ide-tab.on[data-c="cloud"]{color:var(--cloud)} .ide-tab.on[data-c="ai"]{color:var(--ai)} .ide-tab.on[data-c="research"]{color:var(--research)}
+/* systems service map */
+.svc{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg-2);margin-bottom:8px;color:var(--ink-dim);font-size:.82rem}
+.svc .ic{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:.8rem;flex-shrink:0}
+.svc b{color:var(--ink);font-weight:600}
+.svc small{margin-left:auto;color:var(--ai);font-size:.71rem}
+.svc-link{height:13px;width:2px;background:var(--cloud);opacity:.45;margin:-2px 0 -2px 25px}
+/* research summary */
+.res .rp-pill{display:inline-block;font-family:var(--mono);font-size:.7rem;color:var(--research);border:1px solid color-mix(in srgb,var(--research) 32%,transparent);padding:4px 10px;border-radius:30px}
+.res .rp-h{font-family:var(--serif);font-weight:500;font-size:1.14rem;color:var(--ink);margin:12px 0 6px;line-height:1.25}
+.res .rp-p{font-family:var(--sans);font-size:.82rem;color:var(--ink-dim);margin-bottom:4px}
+.res .rp-res{font-family:var(--mono);font-size:.78rem;color:var(--ink-dim);margin-top:8px;padding-top:12px;border-top:1px solid var(--line)}
+.res .rp-res b{color:var(--research);font-size:1.02rem}
 .ide-body{padding:20px;min-height:290px;font-family:var(--mono);font-size:.82rem}
 .pane{display:none;animation:fade .4s}
 .pane.on{display:block}
@@ -327,43 +356,39 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
         <div class="ide-tabs">
           <div class="dots"><i></i><i></i><i></i></div>
           <div class="ide-tab on" data-pane="p-term" data-c="devops">whoami.sh</div>
-          <div class="ide-tab" data-pane="p-pipe" data-c="cloud">pipeline.yml</div>
-          <div class="ide-tab" data-pane="p-ai" data-c="ai">fed_learn.py</div>
+          <div class="ide-tab" data-pane="p-sys" data-c="cloud">systems</div>
+          <div class="ide-tab" data-pane="p-res" data-c="research">research</div>
         </div>
         <div class="ide-body">
           <!-- terminal -->
           <div class="pane on term" id="p-term">
             <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">whoami</span></div>
-            <div class="o">backend-engineer · devops · ml-researcher</div>
-            <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">cat stack.txt</span></div>
-            <div class="o">Java · Spring Boot · PostgreSQL · Docker · AWS · Datadog</div>
-            <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">./scale --throughput</span></div>
-            <div class="o">~100M notifications/mo &nbsp;<span class="star">✦</span>&nbsp; 160+ banks</div>
+            <div class="o">Mohammed Asfakul Ghani — Software Engineer (Lead)</div>
+            <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">cat focus.txt</span></div>
+            <div class="o">backend · distributed systems · devops · ml-research</div>
+            <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">./impact --top</span></div>
+            <div class="o">~100M msgs/mo <span class="star">✦</span> 160+ US banks <span class="star">✦</span> 5.5+ yrs</div>
+            <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="c">cat status.txt</span></div>
+            <div class="o">open to senior &amp; research roles · remote-friendly</div>
             <div class="ln"><span class="p">asfakul@dhaka</span>:<span class="hl">~</span>$ <span class="cursor"></span></div>
           </div>
-          <!-- pipeline -->
-          <div class="pane pipe" id="p-pipe">
-            <div class="stage"><span class="st-dot">✓</span><b>git push</b><small>feature → main</small></div>
-            <div class="st-link"></div>
-            <div class="stage"><span class="st-dot">✓</span><b>build · Jenkins</b><small>Spring Boot</small></div>
-            <div class="st-link"></div>
-            <div class="stage"><span class="st-dot">✓</span><b>test · JUnit</b><small>TDD</small></div>
-            <div class="st-link"></div>
-            <div class="stage"><span class="st-dot">✓</span><b>deploy · Docker + Nginx</b><small>AWS</small></div>
-            <div class="pipe-foot"><span class="b"></span> pipeline passing · release time ↓ 60%</div>
+          <!-- systems service map -->
+          <div class="pane sys" id="p-sys">
+            <div class="svc"><span class="ic" style="background:rgba(79,140,255,.15);color:var(--swe)">⇅</span><b>Ingest API</b>&nbsp;· REST<small>CSV · on-demand</small></div>
+            <div class="svc-link"></div>
+            <div class="svc"><span class="ic" style="background:rgba(53,224,126,.15);color:var(--devops)">⚙</span><b>Spring Batch</b>&nbsp;· jobs<small>~30× faster</small></div>
+            <div class="svc-link"></div>
+            <div class="svc"><span class="ic" style="background:rgba(154,123,255,.15);color:var(--research)">◫</span><b>ActiveMQ Artemis</b>&nbsp;· events<small>~10× tput</small></div>
+            <div class="svc-link"></div>
+            <div class="svc"><span class="ic" style="background:rgba(255,180,84,.15);color:var(--cp)">✉</span><b>Email + SMS</b>&nbsp;· Vonage<small>~100M/mo</small></div>
           </div>
-          <!-- ai code -->
-          <div class="pane code" id="p-ai">
-            <span class="l"><span class="cm"># federated learning · non-IID · CIFAR-10</span></span>
-            <span class="l"><span class="kw">for</span> r <span class="kw">in</span> <span class="fn">range</span>(rounds):</span>
-            <span class="l">    <span class="kw">for</span> c <span class="kw">in</span> clients:          <span class="cm"># 3–10</span></span>
-            <span class="l">        gan = <span class="fn">train_cgan</span>(c.data)</span>
-            <span class="l">        w   = <span class="fn">fedavg</span>(<span class="fn">local_fit</span>(c, gan))</span>
-            <span class="l">    <span class="fn">refine</span>(server, w)        <span class="cm"># server-side</span></span>
-            <span class="l"></span>
-            <span class="l"><span class="nm">acc</span> = <span class="st">+3.6pp</span>  <span class="cm"># @ α=0.1 (severe skew)</span></span>
+          <!-- research summary -->
+          <div class="pane res" id="p-res">
+            <span class="rp-pill">ongoing · federated learning</span>
+            <h5 class="rp-h">Privacy-preserving ML on non-IID data</h5>
+            <p class="rp-p">Per-client Conditional GANs + ViT-Lite clients on CIFAR-10, with server-side refinement — benefit gated by label-skew severity.</p>
             <div class="nnet">
-              <svg width="210" height="92" viewBox="0 0 210 92" fill="none">
+              <svg width="210" height="86" viewBox="0 0 210 92" fill="none">
                 <g stroke="var(--research)" stroke-width="1" opacity=".5">
                   <path d="M30 20 L105 16 M30 20 L105 46 M30 20 L105 76 M30 46 L105 16 M30 46 L105 46 M30 46 L105 76 M30 72 L105 16 M30 72 L105 46 M30 72 L105 76"/>
                   <path d="M105 16 L180 32 M105 16 L180 60 M105 46 L180 32 M105 46 L180 60 M105 76 L180 32 M105 76 L180 60" stroke="var(--ai)"/>
@@ -375,6 +400,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
                 </g>
               </svg>
             </div>
+            <div class="rp-res"><b>+3.6 pp</b> accuracy under severe label skew (α = 0.1)</div>
           </div>
         </div>
       </div>
