@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# astrodust — Asfakul Ghani · Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio of **Mohammed Asfakul Ghani** — backend & distributed-systems engineer, DevOps practitioner, ML researcher, cloud enthusiast and competitive programmer.
 
-## Available Scripts
+🔗 **Live:** _deploy to Vercel (see below)_
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+A single-page, fully self-contained portfolio (one `index.html`, no build step) that showcases a multi-disciplinary engineering identity:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Hero** with a multi-tab IDE panel (terminal · CI/CD pipeline · ML code) and a live constellation field
+- **By-the-numbers** stats band (~100M notifications/mo · 160+ US banks · ~30M letters/mo)
+- **Selected systems** — production case studies (Notification Engine, USPS processor, Oracle→Aurora migration, CI/CD + observability)
+- **Experience** timeline, **Research** (Federated Learning + GAN), **Competitive programming & chess** with rating graph
+- **Skills**, **projects**, **writing**, light/dark theme, scroll animations
+- **astrodust** brand — the Orbit-O planet mark + constellation motif
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech
 
-### `npm test`
+Plain HTML + CSS + vanilla JS. Fonts: Space Grotesk, Inter, JetBrains Mono, Fraunces (Google Fonts).
+No framework, no bundler — it deploys as a static site anywhere.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deploy
 
-### `npm run build`
+**Vercel (recommended):**
+1. Go to [vercel.com/new](https://vercel.com/new)
+2. Import this repository
+3. Framework preset: **Other** · Output: root (no build command needed)
+4. Deploy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Any push to `main` then auto-deploys.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Or run locally:** just open `index.html` in a browser, or `npx serve`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2026 Asfakul Ghani

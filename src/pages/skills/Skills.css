@@ -1,7 +1,0 @@
-.skills-title {
-  @apply text-5xl lg:text-6xl text-gray-800 font-normal;
-}
-
-.skills-subtitle {
-  @apply pb-12 pt-4 text-xl text-gray-500 uppercase tracking-wide;
-}
